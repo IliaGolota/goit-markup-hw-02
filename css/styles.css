@@ -59,6 +59,10 @@ body {
   text-decoration: none;
 }
 
+.list-contacts .link:hover {
+  color: var(--accent-color);
+}
+
 .link.current {
   color: var(--accent-color);
 }
