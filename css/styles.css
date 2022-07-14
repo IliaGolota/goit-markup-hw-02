@@ -7,8 +7,7 @@
   --accent-color: #2196f3;
   /*белый цвет*/
   --white-color: #fff;
-  /*цвет ховера кнопки*/
-  --hover-color: #188ce8;
+
   /*черный цвет*/
   --black-color: #000;
   /*цвет hero-footer */
@@ -18,6 +17,18 @@
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   /*section team background*/
   --team-color: #f5f4fa;
+  /*цвет текста  кнопки*/
+  --button-text: #fff;
+  /*цвет фона первой кнопик*/
+  --first-button-background: #2196f3;
+  /*цвет ховера первой кнопки*/
+  --first-button-hover-background: #188ce8;
+  /*цвет фона второй кнопки*/
+  --second-button-background: #2196f3;
+  /*цвет текста ховера второй кнопки*/
+  --second-button-hover-text: #212121;
+  /*цвет фона ховера второй кнопки*/
+  --second-button-hover-background: #f5f4fa;
 }
 
 body {
@@ -40,6 +51,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+.list-contacts {
+  list-style: none;
+}
+.list-contacts .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
 
 .link.current {
   color: var(--accent-color);
@@ -57,15 +75,15 @@ body {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--button-text);
+  background-color: var(--first-button-background);
 }
 
 .btn.primary:hover,
 .btn.primary:focus {
   cursor: pointer;
-  color: var(--white-color);
-  background-color: var(--hover-color);
+  color: var(--button-text);
+  background-color: var(--first-button-hover-background);
 }
 
 .btn.secondary {
@@ -75,16 +93,16 @@ body {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  background: var(--accent-color);
+  color: var(--button-text);
+  background: var(--second-button-background);
   box-shadow: var(--box-shadow-color);
   border-radius: 4px;
 }
 
 .btn.secondary:hover,
 .btn.secondary:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  color: var(--second-button-hover-text);
+  background-color: var(--second-button-hover-background);
   cursor: pointer;
 }
 
